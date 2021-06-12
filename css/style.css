@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: default;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+.viewport {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(153, 204, 204, 1);
+    padding: 4rem 1rem;
+}
+
+.navbar-styling {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(248, 215, 117, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-evenly {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 30vw;
+    height: 30vh;
+    background-color: rgba(252, 249, 230, 1);
+    border-radius: 15px;
+}
+
+.about-me p {
+    width: 80%;
+    text-align: justify;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-right: 1px solid rgb(131, 133, 136);
+    width: 15%;
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    animation: sunfleck;
+    animation-duration: 0.3s;
+}
+
+@keyframes sunfleck {
+    from {
+        background: linear-gradient(-45deg, rgb(248, 215, 117) 30%, rgb(253, 236, 183) 50%, rgb(248, 215, 117) 70%);
+        background-position: 100%;
+        background-size: 400% 100%;
+    }
+    to {
+        background: linear-gradient(-45deg, rgb(248, 215, 117) 30%, rgb(253, 236, 183) 50%, rgb(248, 215, 117) 70%);
+        background-position: 0%;
+        background-size: 400% 100%;
+    }
+}
+
+.nav-link:first-of-type {
+    border-left: 1px solid rgb(131, 133, 136);
+}
+
+.projects-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.project-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(252, 249, 230, 1);
+    border-radius: 15px;
+    filter: sepia(20%);
+}
+
+.project-box:hover {
+    filter: sepia(0%);
+    box-shadow: 0px 0px 10px rgba(252, 249, 230, 0.5);
+}
+
+.project-box h3 {
+    font-size: 100%;
+    color: rgb(131, 133, 136);
+}
+
+.project-img {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid rgb(248, 215, 117);
+}
+
+.fcc-logo {
+    width: 2rem;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+}
+
+#welcome-section h1 {
+    font-size: 4rem;
+    color: rgba(248, 215, 117, 1);
+    text-shadow: 0px 1px 0 rgb(131, 133, 136), 0px -1px 0 rgb(131, 133, 136), 1px 0px 0 rgb(131, 133, 136), -1px 0px 0 rgb(131, 133, 136), 1px 1px 0 rgb(131, 133, 136), 1px -1px 0 rgb(131, 133, 136), -1px 1px 0 rgb(131, 133, 136), -1px -1px 0 rgb(131, 133, 136), 0px 2px 0 rgb(131, 133, 136), 0px -2px 0 rgb(131, 133, 136), 2px 0px 0 rgb(131, 133, 136), -2px 0px 0 rgb(131, 133, 136), 2px 2px 0 rgb(131, 133, 136), 2px -2px 0 rgb(131, 133, 136), -2px 2px 0 rgb(131, 133, 136), -2px -2px 0 rgb(131, 133, 136);
+}
+
+#projects h2,
+#contacts h2 {
+    font-size: 3rem;
+    color: rgba(248, 215, 117, 1);
+    text-shadow: 0px 1px 0 rgb(131, 133, 136), 0px -1px 0 rgb(131, 133, 136), 1px 0px 0 rgb(131, 133, 136), -1px 0px 0 rgb(131, 133, 136), 1px 1px 0 rgb(131, 133, 136), 1px -1px 0 rgb(131, 133, 136), -1px 1px 0 rgb(131, 133, 136), -1px -1px 0 rgb(131, 133, 136), 0px 2px 0 rgb(131, 133, 136), 0px -2px 0 rgb(131, 133, 136), 2px 0px 0 rgb(131, 133, 136), -2px 0px 0 rgb(131, 133, 136), 2px 2px 0 rgb(131, 133, 136), 2px -2px 0 rgb(131, 133, 136), -2px 2px 0 rgb(131, 133, 136), -2px -2px 0 rgb(131, 133, 136);
+}
