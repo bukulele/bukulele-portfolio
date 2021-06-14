@@ -10,53 +10,67 @@
 </head>
 
 <body>
-    <main>
+    <main class="main">
         <nav id="navbar" class="navbar-styling">
             <a href="#welcome-section" class="nav-link">about me</a>
             <a href="#projects" class="nav-link">projects</a>
             <a href="#contacts" class="nav-link">contact me</a>
         </nav>
-        <section id="welcome-section" class="viewport flex-centered">
+        <section id="welcome-section" class="viewport">
             <h1>Hi! My name is Nik, and <br>&nbsp;&nbsp;&nbsp;I'm a front-end developer.</h1>
-            <div class="about-me">
+            <div class="text-block">
                 <p>blablabla I'm so cool<br>blablabla I'm learning to code on freecodecamp...</p>
             </div>
         </section>
-        <section id="projects" class="viewport flex-evenly">
+        <section id="projects" class="viewport">
             <h2>Here are some of my projects</h2>
             <div class="projects-container">
-                <a href="#" class="project-box">
+                <a href="tribute-page/index.html" class="project-tile" target="_blank">
                     <img class="fcc-logo" src="https://i.ibb.co/SmNC8H3/FCC-logo.jpg" alt="">
                     <h3>Tribute page</h3>
                     <img class="project-img" src="https://i.ibb.co/sjwtX9L/FCC-Tribute-page.png" alt="FCC-Tribute-page">
                 </a>
-                <a href="#" class="project-box">
+                <a href="survey-form/index.html" class="project-tile" target="_blank">
                     <img class="fcc-logo" src="https://i.ibb.co/SmNC8H3/FCC-logo.jpg" alt="">
                     <h3>Survey form</h3>
                     <img class="project-img" src="https://i.ibb.co/Mh2B9Zt/FCC-Survey-Form.png" alt="FCC-Survey-Form">
                 </a>
-                <a href="#" class="project-box">
+                <a href="product-landing-page/index.html" class="project-tile" target="_blank">
                     <img class="fcc-logo" src="https://i.ibb.co/SmNC8H3/FCC-logo.jpg" alt="">
                     <h3>Product landing page</h3>
                     <img class="project-img" src="https://i.ibb.co/CQ7pRyg/FCC-Product-Landing-Page.png" alt="FCC-Product-Landing-Page">
                 </a>
-                <a href="#" class="project-box">
+                <a href="technical-documentation-page/index.html" class="project-tile" target="_blank">
                     <img class="fcc-logo" src="https://i.ibb.co/SmNC8H3/FCC-logo.jpg" alt="">
                     <h3>Technical documentation page</h3>
                     <img class="project-img" src="https://i.ibb.co/qy75Vym/FCC-Technical-Documentation-Page.png" alt="FCC-Technical-Documentation-Page">
                 </a>
             </div>
-        </section>
-        <section id="contacts" class="viewport flex-evenly">
-            <h2>I'm open to new projects, so please contact me any convenient way</h2>
-            <div class="contact-links">
-                <img src="https://i.ibb.co/SmNC8H3/FCC-logo.jpg" alt="">
-
+            <div class="text-block">
+                <p>text-block2<br>blablabla I'm learning to code on freecodecamp...</p>
             </div>
-            <form class="email-form"></form>
+        </section>
+        <section id="contacts" class="viewport">
+            <h2>I'm open to new projects, so please contact me in any convenient way</h2>
+            <form class="email-form" action="https://formsubmit.co/zonough@gmail.com" method="POST">
+                <label for="email">
+                You can write me a message right here and leave your email. I will answer you in the shortest time.
+            </label>
+                <input type="email" id="email" name="email" required>
+                <input type="text" name="message" required>
+                <!--input type="hidden" name="_next" value="https://codepen.io/bukulele/full/YzZWQvr"-->
+                <input type="submit">
+            </form>
+            <div class="contact-links">
+                <a href="https://github.com/bukulele" class="contact-link-a" id="profile-link" target="_blank"><img src="https://i.ibb.co/hmfrskN/github-yellow.png" alt="github-yellow"></a>
+                <a href="https://www.freecodecamp.org/bukulele" class="contact-link-a" target="_blank"><img src="https://i.ibb.co/k6Q3zqz/FCC-logo-yellow.jpg" alt="FCC-logo-yellow"></a>
+                <a href="https://www.linkedin.com/in/nikita-sazonov-553b7b33/" class="contact-link-a" target="_blank"><img src="https://i.ibb.co/BcLrGmZ/linkedin-yellow.png" alt="linkedin-yellow"></a>
+            </div>
         </section>
     </main>
     <footer></footer>
 </body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </html>
