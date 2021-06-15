@@ -49,6 +49,26 @@ br {
     border-left: 1px solid rgb(131, 133, 136);
 }
 
+.nav-link:hover {
+    animation: sunfleck;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sunfleck {
+    from {
+        background: linear-gradient(-45deg, rgb(248, 215, 117) 30%, rgb(253, 236, 183) 50%, rgb(248, 215, 117) 70%);
+        background-position: 100%;
+        background-size: 400% 100%;
+    }
+    to {
+        background: linear-gradient(-45deg, rgb(248, 215, 117) 30%, rgb(253, 236, 183) 50%, rgb(248, 215, 117) 70%);
+        background-position: 0%;
+        background-size: 400% 100%;
+        color: rgb(117, 150, 248);
+    }
+}
+
 .viewport {
     width: 100%;
     min-height: 100vh;
@@ -73,29 +93,8 @@ br {
     color: rgb(73, 73, 73);
 }
 
-.nav-link:hover {
-    animation: sunfleck;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes sunfleck {
-    from {
-        background: linear-gradient(-45deg, rgb(248, 215, 117) 30%, rgb(253, 236, 183) 50%, rgb(248, 215, 117) 70%);
-        background-position: 100%;
-        background-size: 400% 100%;
-    }
-    to {
-        background: linear-gradient(-45deg, rgb(248, 215, 117) 30%, rgb(253, 236, 183) 50%, rgb(248, 215, 117) 70%);
-        background-position: 0%;
-        background-size: 400% 100%;
-        color: rgb(117, 150, 248);
-    }
-}
-
 .projects-container {
     display: grid;
-    width: 70%;
     grid-gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
     margin: 1rem auto;
@@ -255,15 +254,7 @@ textarea {
     text-shadow: 0px 1px 0 rgb(131, 133, 136), 0px -1px 0 rgb(131, 133, 136), 1px 0px 0 rgb(131, 133, 136), -1px 0px 0 rgb(131, 133, 136), 1px 1px 0 rgb(131, 133, 136), 1px -1px 0 rgb(131, 133, 136), -1px 1px 0 rgb(131, 133, 136), -1px -1px 0 rgb(131, 133, 136), 0px 2px 0 rgb(131, 133, 136), 0px -2px 0 rgb(131, 133, 136), 2px 0px 0 rgb(131, 133, 136), -2px 0px 0 rgb(131, 133, 136), 2px 2px 0 rgb(131, 133, 136), 2px -2px 0 rgb(131, 133, 136), -2px 2px 0 rgb(131, 133, 136), -2px -2px 0 rgb(131, 133, 136);
 }
 
-#projects h2 {
-    width: 70%;
-    margin: auto;
-    text-align: center;
-    font-size: 3rem;
-    color: rgba(248, 215, 117, 1);
-    text-shadow: 0px 1px 0 rgb(131, 133, 136), 0px -1px 0 rgb(131, 133, 136), 1px 0px 0 rgb(131, 133, 136), -1px 0px 0 rgb(131, 133, 136), 1px 1px 0 rgb(131, 133, 136), 1px -1px 0 rgb(131, 133, 136), -1px 1px 0 rgb(131, 133, 136), -1px -1px 0 rgb(131, 133, 136), 0px 2px 0 rgb(131, 133, 136), 0px -2px 0 rgb(131, 133, 136), 2px 0px 0 rgb(131, 133, 136), -2px 0px 0 rgb(131, 133, 136), 2px 2px 0 rgb(131, 133, 136), 2px -2px 0 rgb(131, 133, 136), -2px 2px 0 rgb(131, 133, 136), -2px -2px 0 rgb(131, 133, 136);
-}
-
+#projects h2,
 #contacts h2 {
     width: 70%;
     margin: 0 auto;
