@@ -331,6 +331,13 @@ textarea {
     .email-form {
         width: 90%;
     }
+    .nav-link {
+        width: 25%;
+    }
+    .bukulele-logo {
+        position: static;
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -345,5 +352,11 @@ textarea {
     .contact-link-a {
         height: 1rem;
         font-size: 1rem;
+    }
+    .nav-link {
+        width: 30%;
+    }
+    .bukulele-logo {
+        display: none;
     }
 }
