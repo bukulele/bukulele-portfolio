@@ -100,9 +100,9 @@ br {
 }
 
 .projects-container {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 1rem auto;
 }
 
@@ -111,11 +111,11 @@ br {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    min-width: 100%;
-    min-height: 30vh;
+    height: auto;
     overflow-y: visible;
     filter: sepia(20%);
     padding: 0.5rem;
+    margin: 0.5rem;
 }
 
 .project-tile:hover {
@@ -124,8 +124,9 @@ br {
 }
 
 .project-tile h3 {
-    font-size: 100%;
+    font-size: 1rem;
     color: rgb(131, 133, 136);
+    margin: 0.5rem auto;
 }
 
 .project-img {
@@ -133,6 +134,7 @@ br {
     height: auto;
     border-radius: 5px;
     border: 1px solid rgb(248, 215, 117);
+    margin: 0.5rem auto;
 }
 
 .fcc-logo {
@@ -161,6 +163,7 @@ br {
     font-size: 1rem;
     border-radius: 5px;
     border: 1px solid rgb(248, 215, 117);
+    text-indent: 0.5rem;
 }
 
 .input-area:hover {
@@ -201,7 +204,6 @@ textarea {
     align-items: center;
     justify-content: space-evenly;
     width: 70%;
-    height: 3rem;
 }
 
 .contact-link-a {
@@ -267,16 +269,81 @@ textarea {
     text-shadow: 0px 1px 0 rgb(131, 133, 136), 0px -1px 0 rgb(131, 133, 136), 1px 0px 0 rgb(131, 133, 136), -1px 0px 0 rgb(131, 133, 136), 1px 1px 0 rgb(131, 133, 136), 1px -1px 0 rgb(131, 133, 136), -1px 1px 0 rgb(131, 133, 136), -1px -1px 0 rgb(131, 133, 136), 0px 2px 0 rgb(131, 133, 136), 0px -2px 0 rgb(131, 133, 136), 2px 0px 0 rgb(131, 133, 136), -2px 0px 0 rgb(131, 133, 136), 2px 2px 0 rgb(131, 133, 136), 2px -2px 0 rgb(131, 133, 136), -2px 2px 0 rgb(131, 133, 136), -2px -2px 0 rgb(131, 133, 136);
 }
 
-@media only screen and (max-width: 768px) {
-    html {
-        font-size: 14px;
-    }
+
+/*RESPONSIVE DESIGN FOR LAPTOPS, PHONES AND TABLETS*/
+
+@media only screen and (max-width: 1300px) {
     #welcome-section h1 {
+        font-size: 3rem;
+    }
+    .project-tile h3 {
+        font-size: 0.8rem;
+    }
+    #projects h2,
+    #contacts h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .projects-container {
+        flex-wrap: wrap;
+    }
+    .project-tile {
+        width: 40%;
+    }
+    .text-block {
+        width: 70%;
+        align-self: auto;
+        height: auto;
+    }
+    .contact-link-a {
+        height: 1.5rem;
+        font-size: 1.5rem;
+    }
+    .contact-link-img {
+        margin: 3px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #welcome-section h1 {
+        font-size: 2rem;
+    }
+    .project-tile {
+        width: 90%;
+    }
+    #projects h2,
+    #contacts h2 {
         font-size: 2rem;
     }
     .text-block {
         width: 90%;
-        align-self: auto;
-        height: auto;
+    }
+    .contact-links {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .contact-link-a {
+        margin: 0.5rem;
+    }
+    .email-form {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #welcome-section h1 {
+        font-size: 1.5rem;
+    }
+    #projects h2,
+    #contacts h2 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .contact-link-a {
+        height: 1rem;
+        font-size: 1rem;
     }
 }
