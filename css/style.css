@@ -69,6 +69,11 @@ br {
     outline: 3px solid rgb(252, 249, 230);
 }
 
+.nav-link:active,
+.contact-link-a:active {
+    outline: none;
+}
+
 @-webkit-keyframes sunfleck {
     from {
         background: linear-gradient(-45deg, rgb(248, 215, 117) 30%, rgb(253, 236, 183) 50%, rgb(248, 215, 117) 70%);
@@ -151,6 +156,10 @@ br {
 .project-tile:focus,
 .submit-button:focus {
     outline: 3px solid rgb(73, 73, 73);
+}
+
+.project-tile:active {
+    outline: none;
 }
 
 .project-tile h3 {
@@ -281,6 +290,7 @@ textarea {
 .submit-button:active {
     background-color: rgba(153, 204, 204, 1);
     color: rgb(73, 73, 73);
+    outline: none;
 }
 
 .footer {
