@@ -64,6 +64,11 @@ br {
     animation-fill-mode: forwards;
 }
 
+.nav-link:focus,
+.contact-link-a:focus {
+    outline: 3px solid rgb(252, 249, 230);
+}
+
 @-webkit-keyframes sunfleck {
     from {
         background: linear-gradient(-45deg, rgb(248, 215, 117) 30%, rgb(253, 236, 183) 50%, rgb(248, 215, 117) 70%);
@@ -141,6 +146,11 @@ br {
     -webkit-filter: sepia(0%);
     filter: sepia(0%);
     box-shadow: 0px 0px 15px rgba(252, 249, 230, 0.5);
+}
+
+.project-tile:focus,
+.submit-button:focus {
+    outline: 3px solid rgb(73, 73, 73);
 }
 
 .project-tile h3 {
@@ -235,7 +245,7 @@ textarea {
     width: auto;
     font-size: 2rem;
     font-weight: bold;
-    color: white;
+    color: rgb(252, 249, 230);
     padding: 1px;
     border-radius: 15px;
 }
@@ -265,7 +275,7 @@ textarea {
 
 .submit-button:hover {
     background-color: rgba(153, 204, 204, 1);
-    color: rgb(255, 255, 255);
+    color: rgb(252, 249, 230);
 }
 
 .submit-button:active {
