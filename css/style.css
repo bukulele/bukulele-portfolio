@@ -122,16 +122,15 @@
 .section__header {
     color: rgba(248, 215, 117, 1);
     text-shadow: 0px 1px 0 rgb(131, 133, 136), 0px -1px 0 rgb(131, 133, 136), 1px 0px 0 rgb(131, 133, 136), -1px 0px 0 rgb(131, 133, 136), 1px 1px 0 rgb(131, 133, 136), 1px -1px 0 rgb(131, 133, 136), -1px 1px 0 rgb(131, 133, 136), -1px -1px 0 rgb(131, 133, 136), 0px 2px 0 rgb(131, 133, 136), 0px -2px 0 rgb(131, 133, 136), 2px 0px 0 rgb(131, 133, 136), -2px 0px 0 rgb(131, 133, 136), 2px 2px 0 rgb(131, 133, 136), 2px -2px 0 rgb(131, 133, 136), -2px 2px 0 rgb(131, 133, 136), -2px -2px 0 rgb(131, 133, 136);
+    margin: auto;
 }
 
 .section__header_big {
     font-size: 4rem;
-    margin: auto;
 }
 
 .section__header_small {
     width: 70%;
-    margin: 0 auto;
     text-align: center;
     font-size: 3rem;
 }
@@ -152,6 +151,10 @@
     align-items: center;
     line-height: 130%;
     text-align: justify;
+}
+
+.section__text-block br {
+    margin: 0.5rem;
 }
 
 .section__div {
@@ -327,416 +330,88 @@
 }
 
 
-/*OLD CSS
-
-html {
-    font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;
-}
-
-br {
-    margin: 0.5rem;
-}
-
-.content_box {
-    display: flex;
-    background-color: rgba(252, 249, 230, 1);
-    border-radius: 15px;
-}
-
-.navbar-styling {
-    position: fixed;
-    width: 100%;
-    height: 4rem;
-    background-color: rgba(248, 215, 117, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
-
-.bukulele-logo {
-    position: absolute;
-    height: 70%;
-    left: 3rem;
-}
-
-.nav-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    border-right: 1px solid rgb(131, 133, 136);
-    width: 15%;
-    text-decoration: none;
-    color: rgb(73, 73, 73);
-    font-weight: bold;
-}
-
-.nav-link:first-of-type {
-    border-left: 1px solid rgb(131, 133, 136);
-}
-
-.nav-link:hover {
-    -webkit-animation: sunfleck;
-    animation: sunfleck;
-    -webkit-animation-duration: 0.3s;
-    animation-duration: 0.3s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
-.nav-link:focus,
-.contact-link-a:focus {
-    outline: 3px solid rgb(252, 249, 230);
-}
-
-.nav-link:active,
-.contact-link-a:active {
-    outline: none;
-}
-
-@-webkit-keyframes sunfleck {
-    from {
-        background: linear-gradient(-45deg, rgb(248, 215, 117) 30%, rgb(253, 236, 183) 50%, rgb(248, 215, 117) 70%);
-        background-position: 100%;
-        background-size: 400% 100%;
-    }
-    to {
-        background: linear-gradient(-45deg, rgb(248, 215, 117) 30%, rgb(253, 236, 183) 50%, rgb(248, 215, 117) 70%);
-        background-position: 0%;
-        background-size: 400% 100%;
-        color: rgb(117, 150, 248);
-    }
-}
-
-@keyframes sunfleck {
-    from {
-        background: linear-gradient(-45deg, rgb(248, 215, 117) 30%, rgb(253, 236, 183) 50%, rgb(248, 215, 117) 70%);
-        background-position: 100%;
-        background-size: 400% 100%;
-    }
-    to {
-        background: linear-gradient(-45deg, rgb(248, 215, 117) 30%, rgb(253, 236, 183) 50%, rgb(248, 215, 117) 70%);
-        background-position: 0%;
-        background-size: 400% 100%;
-        color: rgb(117, 150, 248);
-    }
-}
-
-.viewport {
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgba(153, 204, 204, 1);
-    padding: 4rem 1rem 1rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.text-block {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-end;
-    line-height: 130%;
-    width: 430px;
-    height: 150px;
-    text-align: justify;
-    padding: 1rem;
-    color: rgb(73, 73, 73);
-}
-
-.projects-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 1rem auto;
-}
-
-.project-tile {
-    position: relative;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    height: auto;
-    overflow-y: visible;
-    -webkit-filter: sepia(20%);
-    filter: sepia(20%);
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
-
-.project-tile:hover {
-    -webkit-filter: sepia(0%);
-    filter: sepia(0%);
-    box-shadow: 0px 0px 15px rgba(252, 249, 230, 0.5);
-}
-
-.project-tile:focus,
-.submit-button:focus {
-    outline: 3px solid rgb(73, 73, 73);
-}
-
-.project-tile:active {
-    outline: none;
-}
-
-.project-tile h3 {
-    font-size: 1rem;
-    color: rgb(131, 133, 136);
-    margin: 0.5rem auto;
-}
-
-.project-img {
-    width: 90%;
-    height: auto;
-    border-radius: 5px;
-    border: 1px solid rgb(248, 215, 117);
-    margin: 0.5rem auto;
-}
-
-.fcc-logo {
-    width: 2rem;
-    height: auto;
-    border-radius: 50%;
-    position: absolute;
-    top: -3px;
-    left: -3px;
-}
-
-.email-form {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: 70%;
-    height: auto;
-    text-align: justify;
-    padding: 1rem;
-    color: rgb(73, 73, 73);
-    margin: 1rem;
-}
-
-.input-area {
-    width: 100%;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid rgb(248, 215, 117);
-    text-indent: 0.5rem;
-}
-
-.input-area:hover {
-    outline: none !important;
-    box-shadow: 0px 0px 5px 4px rgba(131, 133, 136, 0.15);
-}
-
-.input-area:focus {
-    outline: none !important;
-    box-shadow: 0px 0px 5px 4px rgba(131, 133, 136, 0.25);
-}
-
-.email-input {
-    height: 2rem;
-}
-
-.message-input {
-    height: 5rem;
-    font-family: 'Raleway', sans-serif;
-}
-
-.form-block {
-    width: 100%;
-    margin: 1rem 0;
-}
-
-label {
-    font-weight: bold;
-}
-
-textarea {
-    resize: none;
-    font-family: 'Raleway', sans-serif;
-}
-
-.contact-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 70%;
-    margin: auto;
-}
-
-.contact-link-a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 2rem;
-    width: auto;
-    font-size: 2rem;
-    font-weight: bold;
-    color: rgb(252, 249, 230);
-    padding: 1px;
-    border-radius: 15px;
-}
-
-.contact-link-img {
-    height: 100%;
-    width: auto;
-    border-radius: 7px;
-    margin: 0.5rem;
-}
-
-.contact-link-a:hover {
-    text-decoration: underline;
-}
-
-.submit-button {
-    display: block;
-    background-color: rgb(248, 215, 117);
-    height: 1.5rem;
-    color: rgb(73, 73, 73);
-    font-weight: bold;
-    border-radius: 5px;
-    border: none;
-    margin: auto;
-    padding: 0 0.5rem;
-}
-
-.submit-button:hover {
-    background-color: rgba(153, 204, 204, 1);
-    color: rgb(252, 249, 230);
-}
-
-.submit-button:active {
-    background-color: rgba(153, 204, 204, 1);
-    color: rgb(73, 73, 73);
-    outline: none;
-}
-
-.footer {
-    display: flex;
-    width: 100%;
-    height: 3rem;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(153, 204, 204);
-    color: rgb(73, 73, 73);
-    border-top: 2px solid rgb(252, 249, 230);
-}
-
-.bukulele-logo-footer {
-    height: 70%;
-    width: auto;
-    margin: 1rem;
-}
-
-#welcome-section h1 {
-    font-size: 4rem;
-    margin: auto;
-    color: rgba(248, 215, 117, 1);
-    text-shadow: 0px 1px 0 rgb(131, 133, 136), 0px -1px 0 rgb(131, 133, 136), 1px 0px 0 rgb(131, 133, 136), -1px 0px 0 rgb(131, 133, 136), 1px 1px 0 rgb(131, 133, 136), 1px -1px 0 rgb(131, 133, 136), -1px 1px 0 rgb(131, 133, 136), -1px -1px 0 rgb(131, 133, 136), 0px 2px 0 rgb(131, 133, 136), 0px -2px 0 rgb(131, 133, 136), 2px 0px 0 rgb(131, 133, 136), -2px 0px 0 rgb(131, 133, 136), 2px 2px 0 rgb(131, 133, 136), 2px -2px 0 rgb(131, 133, 136), -2px 2px 0 rgb(131, 133, 136), -2px -2px 0 rgb(131, 133, 136);
-}
-
-#projects h2,
-#contacts h2 {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 3rem;
-    color: rgba(248, 215, 117, 1);
-    text-shadow: 0px 1px 0 rgb(131, 133, 136), 0px -1px 0 rgb(131, 133, 136), 1px 0px 0 rgb(131, 133, 136), -1px 0px 0 rgb(131, 133, 136), 1px 1px 0 rgb(131, 133, 136), 1px -1px 0 rgb(131, 133, 136), -1px 1px 0 rgb(131, 133, 136), -1px -1px 0 rgb(131, 133, 136), 0px 2px 0 rgb(131, 133, 136), 0px -2px 0 rgb(131, 133, 136), 2px 0px 0 rgb(131, 133, 136), -2px 0px 0 rgb(131, 133, 136), 2px 2px 0 rgb(131, 133, 136), 2px -2px 0 rgb(131, 133, 136), -2px 2px 0 rgb(131, 133, 136), -2px -2px 0 rgb(131, 133, 136);
-}
-
-
-/*RESPONSIVE DESIGN FOR LAPTOPS, PHONES AND TABLETS
+/*RESPONSIVE DESIGN FOR LAPTOPS, PHONES AND TABLETS*/
 
 @media only screen and (max-width: 1300px) {
-    #welcome-section h1 {
+    .section__header_big {
         font-size: 3rem;
     }
-    .project-tile h3 {
-        font-size: 0.8rem;
-    }
-    #projects h2,
-    #contacts h2 {
+    .section__header_small {
         font-size: 2rem;
+    }
+    .container__header {
+        font-size: 0.8rem;
     }
 }
 
 @media only screen and (max-width: 1100px) {
-    .projects-container {
+    .section__div {
         flex-wrap: wrap;
     }
-    .project-tile {
+    .div__container {
         width: 40%;
     }
-    .text-block {
+    .section__text-block {
         width: 70%;
         align-self: auto;
         height: auto;
     }
-    .contact-link-a {
+    .div__a {
         height: 1.5rem;
         font-size: 1.5rem;
     }
-    .contact-link-img {
+    .div__img {
         margin: 3px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    #welcome-section h1 {
+    .section__header_big {
         font-size: 2rem;
     }
-    .project-tile {
+    .div__container {
         width: 90%;
-    }
-    #projects h2,
-    #contacts h2 {
-        font-size: 2rem;
-    }
-    .text-block {
-        width: 90%;
-    }
-    .contact-links {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
     }
-    .contact-link-a {
-        margin: 0.5rem;
+    .section__header_small {
+        font-size: 2rem;
     }
-    .email-form {
+    .section__text-block {
         width: 90%;
     }
-    .nav-link {
+    .div__a {
+        margin: 0.5rem;
+    }
+    .section__form {
+        width: 90%;
+    }
+    .navbar__link {
         width: 25%;
     }
-    .bukulele-logo {
+    .navbar__bukulele-logo_nav {
         position: static;
         margin: auto;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    #welcome-section h1 {
+    .section__header_big {
         font-size: 1.5rem;
     }
-    #projects h2,
-    #contacts h2 {
+    .section__header_small {
         width: 100%;
         font-size: 1.5rem;
     }
-    .contact-link-a {
+    .div__a {
         height: 1rem;
         font-size: 1rem;
     }
-    .nav-link {
+    .navbar__link {
         width: 30%;
     }
-    .bukulele-logo {
+    .navbar__bukulele-logo_nav {
         display: none;
     }
-}*/
+}
