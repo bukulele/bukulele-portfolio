@@ -290,6 +290,7 @@ textarea {
     justify-content: center;
     align-items: center;
     background-color: rgb(153, 204, 204);
+    color: rgb(73, 73, 73);
     border-top: 2px solid rgb(252, 249, 230);
 }
 
