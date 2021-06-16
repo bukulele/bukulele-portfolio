@@ -1,6 +1,6 @@
 <!--PROJECTS' PORTFOLIO OF NIKITA SAZONOV-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html html_font-style html_scroll-behavior">
 
 <head>
     <meta charset="utf-8">
@@ -10,84 +10,80 @@
 </head>
 
 <body>
-    <main>
-        <nav id="navbar" class="navbar-styling">
-            <img class="bukulele-logo" src="https://i.ibb.co/X2xRCdk/Bukulele-logo-white.png" alt="Bukulele-logo-white">
-            <a href="#welcome-section" class="nav-link">about me</a>
-            <a href="#projects" class="nav-link">projects</a>
-            <a href="#contacts" class="nav-link">contact me</a>
+    <main class="main">
+        <nav id="navbar" class="navbar navbar_fixed-top">
+            <img class="bukulele-logo navbar__bukulele-logo_nav" src="https://i.ibb.co/X2xRCdk/Bukulele-logo-white.png" alt="Bukulele-logo-white">
+            <a href="#welcome" class="navbar__link">about me</a>
+            <a href="#projects" class="navbar__link">projects</a>
+            <a href="#contacts" class="navbar__link">contact me</a>
         </nav>
-        <section id="welcome-section" class="viewport">
-            <h1>Hi! My name is Nik, and <br>&nbsp;&nbsp;&nbsp;I'm a front-end developer.</h1>
-            <div class="text-block content_box">
+        <section id="welcome" class="section main__section">
+            <h1 class="section__header section__header_big">Hi! My name is Nik, and <br>&nbsp;&nbsp;&nbsp;I'm a front-end developer.</h1>
+            <div class="container section__text-block">
                 <p>I'm currently taking a course on freecodecamp.org, learning HTML, CSS and JS.</p><br>
                 <p>On this website you can see the status of my learning and my portfolio.</p>
             </div>
         </section>
-        <section id="projects" class="viewport">
-            <h2>Here are some of my projects</h2>
-            <div class="projects-container">
-                <a href="tribute-page/index.html" class="project-tile content_box" target="_blank">
-                    <img class="fcc-logo" src="https://i.ibb.co/SmNC8H3/FCC-logo.jpg" alt="">
-                    <h3>Tribute page</h3>
-                    <img class="project-img" src="https://i.ibb.co/YXpMXtX/FCC-Tribute-page.png" alt="FCC-Tribute-page">
+        <section id="projects" class="section main__section">
+            <h2 class="section__header section__header_small">Here are some of my projects</h2>
+            <div class="div section__div">
+                <a href="tribute-page/index.html" class="container div__container project-tile" target="_blank">
+                    <img class="container__fcc-logo" src="https://i.ibb.co/SmNC8H3/FCC-logo.jpg" alt="">
+                    <h3 class="container__header">Tribute page</h3>
+                    <img class="container__img" src="https://i.ibb.co/YXpMXtX/FCC-Tribute-page.png" alt="FCC-Tribute-page">
                 </a>
-                <a href="survey-form/index.html" class="project-tile content_box" target="_blank">
-                    <img class="fcc-logo" src="https://i.ibb.co/SmNC8H3/FCC-logo.jpg" alt="">
-                    <h3>Survey form</h3>
-                    <img class="project-img" src="https://i.ibb.co/QpwnN0r/FCC-Survey-Form.png" alt="FCC-Survey-Form">
+                <a href="survey-form/index.html" class="container div__container project-tile" target="_blank">
+                    <img class="container__fcc-logo" src="https://i.ibb.co/SmNC8H3/FCC-logo.jpg" alt="">
+                    <h3 class="container__header">Survey form</h3>
+                    <img class="container__img" src="https://i.ibb.co/QpwnN0r/FCC-Survey-Form.png" alt="FCC-Survey-Form">
                 </a>
-                <a href="product-landing-page/index.html" class="project-tile content_box" target="_blank">
-                    <img class="fcc-logo" src="https://i.ibb.co/SmNC8H3/FCC-logo.jpg" alt="">
-                    <h3>Product landing page</h3>
-                    <img class="project-img" src="https://i.ibb.co/1LjV3Gm/FCC-Product-Landing-Page.png" alt="FCC-Product-Landing-Page">
+                <a href="product-landing-page/index.html" class="container div__container project-tile" target="_blank">
+                    <img class="container__fcc-logo" src="https://i.ibb.co/SmNC8H3/FCC-logo.jpg" alt="">
+                    <h3 class="container__header">Product landing page</h3>
+                    <img class="container__img" src="https://i.ibb.co/1LjV3Gm/FCC-Product-Landing-Page.png" alt="FCC-Product-Landing-Page">
                 </a>
-                <a href="technical-documentation-page/index.html" class="project-tile content_box" target="_blank">
-                    <img class="fcc-logo" src="https://i.ibb.co/SmNC8H3/FCC-logo.jpg" alt="">
-                    <h3>Technical documentation page</h3>
-                    <img class="project-img" src="https://i.ibb.co/jMttWcc/FCC-Technical-Documentation-Page.png" alt="FCC-Technical-Documentation-Page">
+                <a href="technical-documentation-page/index.html" class="container div__container project-tile" target="_blank">
+                    <img class="container__fcc-logo" src="https://i.ibb.co/SmNC8H3/FCC-logo.jpg" alt="">
+                    <h3 class="container__header">Technical documentation page</h3>
+                    <img class="container__img" src="https://i.ibb.co/jMttWcc/FCC-Technical-Documentation-Page.png" alt="FCC-Technical-Documentation-Page">
                 </a>
             </div>
-            <div class="text-block content_box">
+            <div class="container section__text-block">
                 <p>For now there are my training projects, made for freeCodeCamp (they are marked by FCC logo).</p>
             </div>
         </section>
-        <section id="contacts" class="viewport">
-            <h2>I'm open to new projects, so please contact me in any convenient way</h2>
-            <form class="email-form content_box" action="https://formsubmit.co/zonough@gmail.com" method="POST">
+        <section id="contacts" class="section main__section">
+            <h2 class="section__header section__header_small">I'm open to new projects, so please contact me in any convenient way</h2>
+            <form class="container section__form" action="https://formsubmit.co/zonough@gmail.com" method="POST">
                 <p>You can write me a message right here and leave your email. I will answer you in the shortest time.</p>
-                <div class="form-block">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" class="input-area email-input" name="email" placeholder="please enter your email here" required>
+                <div class="section__form-block">
+                    <label class="section__form-label" for="email">Email</label>
+                    <input type="email" id="email" class="section__form-input section__form-email" name="email" placeholder="please enter your email here" required>
                 </div>
-                <div class="form-block">
-                    <label for="message">Message</label>
-                    <textarea type="text" id="message" class="input-area message-input" name="message" placeholder="please enter your message here" required></textarea>
+                <div class="section__form-block">
+                    <label class="section__form-label" for="message">Message</label>
+                    <textarea type="text" id="message" class="section__form-input section__form-message" name="message" placeholder="please enter your message here" required></textarea>
                 </div>
                 <!--input type="hidden" name="_next" value="https://codepen.io/bukulele/full/YzZWQvr"-->
-                <div class="form-block">
-                    <input type="submit" class="submit-button" value="send message">
+                <div class="section__form-block">
+                    <input type="submit" class="button section__form-button" value="send message">
                 </div>
             </form>
-            <div class="contact-links">
-                <a href="https://github.com/bukulele" class="contact-link-a" id="profile-link" target="_blank"><img class="contact-link-img" src="https://i.ibb.co/hmfrskN/github-yellow.png" alt="github-yellow">
+            <div class="div section__div section__div_tight">
+                <a href="https://github.com/bukulele" class="div__a" id="profile-link" target="_blank"><img class="div__img" src="https://i.ibb.co/hmfrskN/github-yellow.png" alt="github-yellow">
                     <p>GitHub</p>
                 </a>
-                <a href="https://www.freecodecamp.org/bukulele" class="contact-link-a" target="_blank"><img class="contact-link-img" src="https://i.ibb.co/k6Q3zqz/FCC-logo-yellow.jpg" alt="FCC-logo-yellow">
+                <a href="https://www.freecodecamp.org/bukulele" class="div__a" target="_blank"><img class="div__img" src="https://i.ibb.co/k6Q3zqz/FCC-logo-yellow.jpg" alt="FCC-logo-yellow">
                     <p>freeCodeCamp</p>
                 </a>
-                <a href="https://www.linkedin.com/in/nikita-sazonov-553b7b33/" class="contact-link-a" target="_blank"><img class="contact-link-img" src="https://i.ibb.co/BcLrGmZ/linkedin-yellow.png" alt="linkedin-yellow">
+                <a href="https://www.linkedin.com/in/nikita-sazonov-553b7b33/" class="div__a" target="_blank"><img class="div__img" src="https://i.ibb.co/BcLrGmZ/linkedin-yellow.png" alt="linkedin-yellow">
                     <p>LinkedIn</p>
                 </a>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <img class="bukulele-logo-footer" src="https://i.ibb.co/X2xRCdk/Bukulele-logo-white.png" alt="Bukulele-logo-white">
+    <footer class="footer footer_full-width">
+        <img class="bukulele-logo footer__bukulele-logo_foot" src="https://i.ibb.co/X2xRCdk/Bukulele-logo-white.png" alt="Bukulele-logo-white">
         <p>Created by <b>bukulele</b> &copy; 2021</p>
     </footer>
 </body>
-
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-</html>
