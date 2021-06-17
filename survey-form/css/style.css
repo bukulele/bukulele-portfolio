@@ -5,6 +5,118 @@
     -webkit-box-sizin: border-box;
 }
 
+.html {
+    font-family: "Alata", "Helvetica", sans-serif;
+}
+
+
+/*BACKGROUND WITH COLORED LAYER ABOVE*/
+
+.body_background-full-size {
+    background-image: url("https://i.ibb.co/yshTKmM/Collage-Favorite-Video-Games-small.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body_background-full-size::before {
+    content: '';
+    position: fixed;
+    background-color: rgba(92, 92, 138, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+/*END OF BACKGROUND*/
+
+.header {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.header__h1_centered,
+.header__p_centered {
+    text-align: center;
+}
+
+.body__header,
+.body__main {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90vw;
+    margin: auto;
+    z-index: 1;
+    padding: 1rem;
+}
+
+.main {
+    font-size: 1.5rem;
+    border-radius: 0px 0px 5px 5px;
+    padding-bottom: 3rem;
+}
+
+.main__form {
+    width: 90%;
+    margin: auto;
+}
+
+.form__input {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 2px inset rgba(82, 82, 122, 1);
+}
+
+.form__input:hover {
+    outline: none !important;
+    box-shadow: 0px 0px 5px 4px rgba(136, 143, 204, 0.35);
+}
+
+.form__input:focus {
+    outline: none !important;
+    box-shadow: 0px 0px 5px 4px rgba(136, 143, 204, 0.45);
+}
+
+.form__input_vertical-resize {
+    resize: vertical;
+}
+
+.form__block {
+    margin: 0px auto 1rem;
+}
+
+.form__check-radio {
+    font-size: 1.2rem;
+}
+
+.form__check-radio input {
+    transform: scale(1.5);
+    border: 2px inset rgba(82, 82, 122, 1);
+}
+
+.button {
+    font-size: 1.5rem;
+    background-color: rgba(128, 255, 128, 1);
+    border-radius: 5px;
+    border: none;
+}
+
+.form__button {
+    margin: auto;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 5px 4px rgba(136, 143, 204, 0.45);
+}
+
 p {
     margin-bottom: 0px;
 }
@@ -25,128 +137,19 @@ option {
     color: #000;
 }
 
-html {
-    font-family: "Alata", "Helvetica", sans-serif;
-}
-
-body {
-    background-image: url("https://i.ibb.co/yshTKmM/Collage-Favorite-Video-Games-small.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-body::before {
-    content: '';
-    position: fixed;
-    background-color: rgba(92, 92, 138, 0.6);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-header,
-main {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 90vw;
-    margin: auto;
-    z-index: 1;
-    padding: 1rem;
-}
-
-header {
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px 5px 0px 0px;
-}
-
-header>p {
-    font-size: 1.5rem;
-    width: 90%;
-    margin: auto;
-}
-
-main {
-    font-size: 1.5rem;
-    border-radius: 0px 0px 5px 5px;
-    padding-bottom: 3rem;
-}
-
-.text-centered {
-    text-align: center;
-}
-
-form {
-    width: 90%;
-    margin: auto;
-}
-
-form>* {
-    display: block;
-}
-
-.input-area {
-    width: 100%;
-    height: 2.5rem;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    border: 2px inset rgba(82, 82, 122, 1);
-}
-
-.input-area:hover {
-    outline: none !important;
-    box-shadow: 0px 0px 5px 4px rgba(136, 143, 204, 0.35);
-}
-
-.input-area:focus {
-    outline: none !important;
-    box-shadow: 0px 0px 5px 4px rgba(136, 143, 204, 0.45);
-}
-
-textarea {
-    resize: vertical;
-}
-
-.form-block {
-    margin: 0px auto 1rem;
-}
-
-.check_radio {
-    font-size: 1.2rem;
-}
-
-.check_radio input {
-    transform: scale(1.5);
-    border: 2px inset rgba(82, 82, 122, 1);
-}
-
-.submit-button {
-    margin: auto;
-    font-size: 1.5rem;
-    background-color: rgba(128, 255, 128, 1);
-    width: 100%;
-    height: 2.5rem;
-    border-radius: 5px;
-    border: none;
-}
-
-.submit-button:hover {
-    box-shadow: 0px 0px 5px 4px rgba(136, 143, 204, 0.45);
-}
-
 @media (max-width: 768px) {
-    header>p {
+    .header__p_centered {
         font-size: 1.2rem;
         width: 95%;
         margin: auto;
     }
-    main {
+    .main {
         font-size: 1.2rem;
     }
-    .check_radio {
+    .form__check-radio {
+        font-size: 1rem;
+    }
+    .form__input {
         font-size: 1rem;
     }
 }

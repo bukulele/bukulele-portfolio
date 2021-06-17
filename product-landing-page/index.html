@@ -1,6 +1,6 @@
 <!--THIS IS THE TRAINING PROJECT "PRODUCT LANDING PAGE" FOR FREECODECAMP BY NIKITA SAZONOV-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
 
 <head>
     <meta charset="utf-8">
@@ -9,54 +9,55 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header id="header" class="header-styling">
-        <img id="header-img" class="header-img-styling" src="https://i.ibb.co/jMTMf9J/mario.png" alt="">
-        <h1 class="text-centered h1-styling">COSMIC GAME</h1>
-        <nav id="nav-bar" class="nav-bar-styling">
-            <div class="border-link"><a href="#about-block" class="nav-link">About game</a></div>
-            <div class="border-link"><a href="#video-block" class="nav-link">Video</a></div>
-            <div class="border-link"><a href="#next_steps-block" class="nav-link">Next steps</a></div>
+<body class="body body_margin">
+    <header id="header" class="header body__header">
+        <img id="header-img" class="header__img" src="https://i.ibb.co/jMTMf9J/mario.png" alt="">
+        <h1 class="header__h1 header__h1_centered">COSMIC GAME</h1>
+        <nav id="nav-bar" class="navbar">
+            <div class="navbar__div_position"><a href="#about-block" class="navbar__link nav-link">About game</a></div>
+            <div class="navbar__div_position"><a href="#video-block" class="navbar__link nav-link">Video</a></div>
+            <div class="navbar__div_position"><a href="#next_steps-block" class="navbar__link nav-link">Next steps</a></div>
         </nav>
     </header>
-    <main>
-        <div id="about-block" class="about-styling viewport">
-            <h2>About game</h2>
-            <div class="text-block">
+    <main class="main">
+        <div id="about-block" class="section main__section section__about_color">
+            <h2 class="section__h2">About game</h2>
+            <div class="section__text-block section__about-text">
                 <p>Hi! My name is Nikita Sazonov and I would like to tell you about the game which I work on. This is the strategy game about the management of people, processes and business development.<br>You will feel how to be a top-manager of big corporation,
                     how it is important to work with your staff and develop the people and how much your success depends on them.<br>I've worked for 10 years for different big companies on different positions, so I will try to put everything I faced with,
                     or even more in my game. Please subscribe on my channel to stay tuned.</p>
             </div>
-            <div class="decoration-block">
-                <img class="decoration-img-styling" src="https://i.ibb.co/x3K86jt/win.png" alt="icon with winning smiling face">
+            <div class="section__deco-block section__about-deco">
+                <img class="section__img" src="https://i.ibb.co/x3K86jt/win.png" alt="icon with winning smiling face">
             </div>
         </div>
-        <div id="video-block" class="video-styling viewport">
-            <h2>Game video</h2>
-            <div class="decoration-block">
-                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/GwBgKE_5ik0" title="YouTube video about strategy games" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="video-block" class="section main__section section__video_color">
+            <h2 class="section__h2">Game video</h2>
+            <div class="section__deco-block section__video-deco">
+                <iframe class="section__iframe" id="video" width="560" height="315" src="https://www.youtube.com/embed/GwBgKE_5ik0" title="YouTube video about strategy games" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
-            <div class="text-block">
+            <div class="section__text-block section__video-text">
                 <p>I'm going to make some video about my game with screenshots and game process at some time. But now, if you are a fan of strategy games, you can watch some video from Youtube. It's not an advertizing, I just want you to enjoy visiting my
                     page =)</p>
             </div>
         </div>
-        <div id="next_steps-block" class="next_steps-styling viewport">
-            <h2>Next steps in my game's development</h2>
-            <div class="text-block">
+        <div id="next_steps-block" class="section main__section section__next-steps_color">
+            <h2 class="section__h2">Next steps in my game's development</h2>
+            <div class="section__text-block section__next-text">
                 <p>For the moment I have nothing exact to show you. I work on the game structure, main elements and relations between them, general mathematics.<br>Probably, I will share some first technical documents with overall descriptions. If you are
                     interested in it, please contact me via social networks.<br>You also can leave your email to get news about my game's future development.</p>
-                <form id="form" class="form-decoration" action="https://www.freecodecamp.com/email-submit">
-                    <input id="email" type="email" name="email" class="email-input" placeholder="please leave your email address here" required>
-                    <input id="submit" type="submit" value="Submit" class="submit-button">
+                <form id="form" class="form section__form" action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" type="email" name="email" class="form__email-input" placeholder="please leave your email address here" required>
+                    <input id="submit" type="submit" value="Submit" class="button form__button">
                 </form>
             </div>
-            <div class="decoration-block">
-                <img class="decoration-img-styling" src="https://i.ibb.co/5LgR0CV/steps.png" alt="icon with steps 1-2-3">
+            <div class="section__deco-block section__next-deco">
+                <img class="section__img" src="https://i.ibb.co/5LgR0CV/steps.png" alt="icon with steps 1-2-3">
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="footer body__footer">
         <div>Icons made by <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> and <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
 </body>

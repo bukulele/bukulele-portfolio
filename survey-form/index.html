@@ -1,6 +1,6 @@
 <!--THIS IS THE TRAINING PROJECT "SURVEY FORM" FOR FREECODECAMP BY NIKITA SAZONOV-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
 
 <head>
     <meta charset="utf-8">
@@ -9,24 +9,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header>
-        <h1 id="title" class="text-centered">VIDEO GAME SURVEY</h1>
-        <p id="description" class="text-centered">Welcome to video game survey from bukulele studio. This is very short survey which will take just couple of minutes to complete. Your feedback is very important for me!</p>
+<body class="body body_background-full-size">
+    <header class="header body__header">
+        <h1 id="title" class="header__h1_centered">VIDEO GAME SURVEY</h1>
+        <p id="description" class="header__p_centered">Welcome to video game survey from bukulele studio. This is very short survey which will take just couple of minutes to complete. Your feedback is very important for me!</p>
     </header>
-    <main>
-        <form id="survey-form" action="https://formsubmit.co/a209c4701efc46c81539d636c5c1136d" method="POST">
-            <div class="form-block">
-                <label id="name-label" for="name">name:</label>
-                <input id="name" class="input-area" type="text" name="name" placeholder="please enter your name" required>
+    <main class="main body__main">
+        <form id="survey-form" class="form main__form" action="https://formsubmit.co/a209c4701efc46c81539d636c5c1136d" method="POST">
+            <div class="form__block">
+                <label class="form__label" id="name-label" for="name">name:</label>
+                <input id="name" class="form__input" type="text" name="name" placeholder="please enter your name" required>
             </div>
-            <div class="form-block">
+            <div class="form__block">
                 <label id="number-label" for="number">age:</label>
-                <input id="number" class="input-area" type="number" name="age" placeholder="please enter your age" min="5" max="150">
+                <input id="number" class="form__input" type="number" name="age" placeholder="please enter your age" min="5" max="150">
             </div>
-            <div class="form-block">
+            <div class="form__block">
                 <label id="occupation-label" for="occupation">where do you live?</label>
-                <select id="dropdown" class="input-area" name="occupation" required>
+                <select id="dropdown" class="form__input" name="occupation" required>
         <option value="" class="placeholder" disabled selected>please select your occupation</option>
         <option value="Afganistan">Afghanistan</option>
    <option value="Albania">Albania</option>
@@ -276,57 +276,56 @@
    <option value="Zimbabwe">Zimbabwe</option>
       </select>
             </div>
-            <div id="source" class="form-block">
+            <div id="source" class="form__block">
                 <p>how did you know about my project?</p>
-                <div class="check_radio">
+                <div class="form__check-radio">
                     <input type="checkbox" id="web_ad" name="source[]" value="web ad">
                     <label id="web_ad-label" for="web_ad">web ad</label>
                 </div>
-                <div class="check_radio">
+                <div class="form__check-radio">
                     <input type="checkbox" id="friends" name="source[]" value="friends">
                     <label id="friends-label" for="friends">friend's advice</label>
                 </div>
-                <div class="check_radio">
+                <div class="form__check-radio">
                     <input type="checkbox" id="forum" name="source[]" value="forum">
                     <label id="forum-label" for="forum">I've read on web-forum</label>
                 </div>
-                <div class="check_radio">
+                <div class="form__check-radio">
                     <input type="checkbox" id="article" name="source[]" value="article">
                     <label id="article-label" for="article">I've read an article about this project</label>
                 </div>
             </div>
-            <div class="form-block">
+            <div class="form__block">
                 <label id="time-label" for="time">how many hours did you spend in my game?</label>
-                <input id="time" class="input-area" type="number" name="time">
+                <input id="time" class="form__input" type="number" name="time">
             </div>
-            <div class="form-block">
+            <div class="form__block">
                 <label id="problems-label" for="problems">have you faced with any problems while playing?</label>
-                <input id="problems" class="input-area" type="text" name="problems">
+                <input id="problems" class="form__input" type="text" name="problems">
             </div>
-            <div id="graphics" class="form-block">
+            <div id="graphics" class="form__block">
                 <p>please, let me know if the graphics in my game is really important.</p>
-                <div class="check_radio">
+                <div class="form__check-radio">
                     <input type="radio" name="graphics" id="very_important" value="1">
                     <label id="very_important-label" for="very_important">very important! I cannot imagine the game whithout graphics nowadays</label>
                 </div>
-                <div class="check_radio">
+                <div class="form__check-radio">
                     <input type="radio" name="graphics" id="not_really" value="0">
                     <label id="not_really-label" for="not_really">it's not really important. just make it pleasant visually. interesting mechanics is more important. </label>
                 </div>
             </div>
-            <div class="form-block">
+            <div class="form__block">
                 <label id="comments-label" for="comments">you are free to leave your comments right here:</label>
-                <textarea id="comments" class="input-area" type="text" name="comments" placeholder="please enter your comment"></textarea>
+                <textarea id="comments" class="form__input form__input_vertical-resize" type="text" name="comments" placeholder="please enter your comment"></textarea>
             </div>
-            <div class="form-block">
+            <div class="form__block">
                 <label id="email-label" for="email">please, leave your email address in order to I could inform you about future development of my game</label>
-                <input type="email" class="input-area" id="email" name="email" placeholder="please enter your email" required>
+                <input type="email" class="form__input" id="email" name="email" placeholder="please enter your email" required>
             </div>
-            <input type="hidden" name="_next" value="https://codepen.io/bukulele/full/YzZWQvr">
-            <input id="submit" class="submit-button" type="submit" value="Submit">
+            <input type="hidden" name="_next" value="https://bukulele.github.io/FCC--Survey-Form/">
+            <input id="submit" class="button form__button" type="submit" value="Submit">
         </form>
     </main>
-
 </body>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

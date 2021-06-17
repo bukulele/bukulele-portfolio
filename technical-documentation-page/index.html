@@ -1,6 +1,6 @@
 <!--THIS IS THE TRAINING PROJECT "TECHNICAL DOCUMENTATION PAGE" FOR FREECODECAMP BY NIKITA SAZONOV-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html html_font">
 
 <head>
     <meta charset="utf-8">
@@ -9,39 +9,39 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <nav id="navbar" class="navbar-styling">
-        <div class="navbar-sticky">
-            <header>Introduction to C#</header>
-            <a href="#General_info" class="nav-link">General info</a>
-            <a href="#.NET_architecture" class="nav-link">.NET architecture</a>
-            <a href="#Hello_World" class="nav-link">Hello World</a>
-            <a href="#Types_and_variables" class="nav-link">Types and variables</a>
-            <a href="#Program_structure" class="nav-link">Program structure</a>
+<body class="body">
+    <nav id="navbar" class="navbar body__navbar">
+        <div class="navbar__div">
+            <header class="navbar__header">Introduction to C#</header>
+            <a href="#General_info" class="navbar__link nav-link">General info</a>
+            <a href="#.NET_architecture" class="navbar__link nav-link">.NET architecture</a>
+            <a href="#Hello_World" class="navbar__link nav-link">Hello World</a>
+            <a href="#Types_and_variables" class="navbar__link nav-link">Types and variables</a>
+            <a href="#Program_structure" class="navbar__link nav-link">Program structure</a>
         </div>
     </nav>
-    <main id="main-doc" class="main-styling">
-        <section id="General_info" class="main-section">
-            <header>General info</header>
+    <main id="main-doc" class="main body__main">
+        <section id="General_info" class="section main-section">
+            <header class="section__header">General info</header>
             <p>C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in the .NET ecosystem. C# has its roots in the C family of languages
                 and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 8 and earlier. If you want to explore the language through interactive examples,
                 try the <a href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/">introduction to C#</a> tutorials.</p>
-            <p>C# is an object-oriented, <span class="text-marked">component-oriented</span> programming language. C# provides language constructs to directly support these concepts, making C# a natural language in which to create and use software components.
-                Since its origin, C# has added features to support new workloads and emerging software design practices.</p>
-            <p>Several C# features help create robust and durable applications. <a href="https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/"><span class="text-marked">Garbage collection</span></a> automatically reclaims memory occupied
-                by unreachable unused objects. <a href="https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references"><span class="text-marked">Nullable types</span></a> guard against variables that don't refer to allocated objects.
-                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions"><span class="text-marked">Exception handling</span></a> provides a structured and extensible approach to error detection and recovery.
-                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions"><span class="text-marked">Lambda expressions</span></a> support functional programming techniques.
-                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/linq/"><span class="text-marked">Language Integrated Query (LINQ)</span></a> syntax creates a common pattern for working with data from any source. Language support for
-                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/"><span class="text-marked">asynchronous operations</span></a> provides syntax for building distributed systems. C# has a
-                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types"><span class="text-marked">unified type system</span></a>. All C# types, including primitive types such as <code>int</code> and <code>double</code>, inherit from
-                a single root <code>object</code> type. All types share a set of common operations. Values of any type can be stored, transported, and operated upon in a consistent manner. Furthermore, C# supports both user-defined <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types">reference types</a>                and <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types">value types</a>. C# allows dynamic allocation of objects and in-line storage of lightweight structures. C# supports generic methods
+            <p>C# is an object-oriented, <span class="section__p_marked">component-oriented</span> programming language. C# provides language constructs to directly support these concepts, making C# a natural language in which to create and use software
+                components. Since its origin, C# has added features to support new workloads and emerging software design practices.</p>
+            <p>Several C# features help create robust and durable applications. <a href="https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/"><span class="section__p_marked">Garbage collection</span></a> automatically reclaims memory occupied
+                by unreachable unused objects. <a href="https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references"><span class="section__p_marked">Nullable types</span></a> guard against variables that don't refer to allocated objects.
+                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions"><span class="section__p_marked">Exception handling</span></a> provides a structured and extensible approach to error detection and recovery.
+                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions"><span class="section__p_marked">Lambda expressions</span></a> support functional programming techniques.
+                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/linq/"><span class="section__p_marked">Language Integrated Query (LINQ)</span></a> syntax creates a common pattern for working with data from any source. Language support for
+                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/"><span class="section__p_marked">asynchronous operations</span></a> provides syntax for building distributed systems. C# has a
+                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types"><span class="section__p_marked">unified type system</span></a>. All C# types, including primitive types such as <code>int</code> and <code>double</code>, inherit
+                from a single root <code>object</code> type. All types share a set of common operations. Values of any type can be stored, transported, and operated upon in a consistent manner. Furthermore, C# supports both user-defined <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types">reference types</a>                and <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types">value types</a>. C# allows dynamic allocation of objects and in-line storage of lightweight structures. C# supports generic methods
                 and types, which provide increased type safety and performance. C# provides iterators, which enable implementers of collection classes to define custom behaviors for client code.</p>
-            <p>C# emphasizes <span class="text-marked">versioning</span> to ensure programs and libraries can evolve over time in a compatible manner. Aspects of C#'s design that were directly influenced by versioning considerations include the separate
+            <p>C# emphasizes <span class="section__p_marked">versioning</span> to ensure programs and libraries can evolve over time in a compatible manner. Aspects of C#'s design that were directly influenced by versioning considerations include the separate
                 <code>virtual</code> and <code>override</code> modifiers, the rules for method overload resolution, and support for explicit interface member declarations.</p>
         </section>
-        <section id=".NET_architecture" class="main-section">
-            <header>.NET architecture</header>
+        <section id=".NET_architecture" class="section main-section">
+            <header class="section__header">.NET architecture</header>
             <p>C# programs run on .NET, a virtual execution system called the common language runtime (CLR) and a set of class libraries. The CLR is the implementation by Microsoft of the common language infrastructure (CLI), an international standard. The
                 CLI is the basis for creating execution and development environments in which languages and libraries work together seamlessly.</p>
             <p>Source code written in C# is compiled into an <a href="https://docs.microsoft.com/en-us/dotnet/standard/managed-code">intermediate language (IL)</a> that conforms to the CLI specification. The IL code and resources, such as bitmaps and strings,
@@ -54,10 +54,10 @@
                 input and output to string manipulation to XML parsing, to web application frameworks to Windows Forms controls. The typical C# application uses the .NET class library extensively to handle common "plumbing" chores.</p>
             <p>For more information about .NET, see <a href="https://docs.microsoft.com/en-us/dotnet/core/introduction">Overview of .NET</a>.</p>
         </section>
-        <section id="Hello_World" class="main-section">
-            <header>Hello World</header>
+        <section id="Hello_World" class="section main-section">
+            <header class="section__header">Hello World</header>
             <p>The "Hello, World" program is traditionally used to introduce a programming language. Here it is in C#:</p>
-            <div class="code-block">
+            <div class="section__code-block">
                 <pre><code>
 using System;
 class Hello
@@ -76,13 +76,13 @@ class Hello
             <p>The output of the program is produced by the <code>WriteLine</code> method of the <code>Console</code> class in the <code>System</code> namespace. This class is provided by the standard class libraries, which, by default, are automatically
                 referenced by the compiler.</p>
         </section>
-        <section id="Types_and_variables" class="main-section">
-            <header>Types and variables</header>
+        <section id="Types_and_variables" class="section main-section">
+            <header class="section__header">Types and variables</header>
             <p>There are two kinds of types in C#: <em>value types</em> and <em>reference types</em>. Variables of value types directly contain their data. Variables of reference types store references to their data, the latter being known as objects. With
                 reference types, it's possible for two variables to reference the same object and possible for operations on one variable to affect the object referenced by the other variable. With value types, the variables each have their own copy of
                 the data, and it isn't possible for operations on one to affect the other (except for <code>ref</code> and <code>out</code> parameter variables).</p>
-            <p>An <span class="text-marked">identifier</span> is a variable name. An identifier is a sequence of unicode characters without any whitespace. An identifier may be a C# reserved word, if it's prefixed by <code>@</code>. Using a reserved word
-                as an identifier can be useful when interacting with other languages.</p>
+            <p>An <span class="section__p_marked">identifier</span> is a variable name. An identifier is a sequence of unicode characters without any whitespace. An identifier may be a C# reserved word, if it's prefixed by <code>@</code>. Using a reserved
+                word as an identifier can be useful when interacting with other languages.</p>
             <p>C#'s value types are further divided into <em>simple types</em>, <em>enum types</em>, <em>struct types</em>, <em>nullable value types</em>, and <em>tuple value types</em>. C#'s reference types are further divided into <em>class types</em>,
                 <em>interface types</em>, <em>array types</em>, and <em>delegate types</em>.</p>
             <p>The following outline provides an overview of C#'s type system.</p>
@@ -158,7 +158,7 @@ class Hello
             <p>C#'s type system is unified such that a value of any type can be treated as an <code>object</code>. Every type in C# directly or indirectly derives from the <code>object</code> class type, and <code>object</code> is the ultimate base class
                 of all types. Values of reference types are treated as objects simply by viewing the values as type <code>object</code>. Values of value types are treated as objects by performing <em>boxing</em> and <em>unboxing operations</em>. In the
                 following example, an <code>int</code> value is converted to <code>object</code> and back again to <code>int</code>.</p>
-            <div class="code-block">
+            <div class="section__code-block">
                 <pre><code>
 int i = 123;
 object o = i;    // Boxing
@@ -197,15 +197,15 @@ int j = (int)o;  // Unboxing
                 </ul>
             </ul>
         </section>
-        <section id="Program_structure" class="main-section">
-            <header>Program structure</header>
-            <p>The key organizational concepts in C# are <span class="text-marked"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure">programs</a></span>, <span class="text-marked"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/namespaces">namespaces</a></span>,
-                <span class="text-marked"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types">types</a></span>, <span class="text-marked"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/members">members</a></span>,
-                and <span class="text-marked"><a href="https://docs.microsoft.com/en-us/dotnet/standard/assembly/">assemblies</a></span>. Programs declare types, which contain members and can be organized into namespaces. Classes, structs, and interfaces
+        <section id="Program_structure" class="section main-section">
+            <header class="section__header">Program structure</header>
+            <p>The key organizational concepts in C# are <span class="section__p_marked"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure">programs</a></span>, <span class="section__p_marked"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/namespaces">namespaces</a></span>,
+                <span class="section__p_marked"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types">types</a></span>, <span class="section__p_marked"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/members">members</a></span>,
+                and <span class="section__p_marked"><a href="https://docs.microsoft.com/en-us/dotnet/standard/assembly/">assemblies</a></span>. Programs declare types, which contain members and can be organized into namespaces. Classes, structs, and interfaces
                 are examples of types. Fields, methods, properties, and events are examples of members. When C# programs are compiled, they're physically packaged into assemblies. Assemblies typically have the file extension .exe or .dll, depending on
-                whether they implement <span class="text-marked">applications</span> or <span class="text-marked">libraries</span>, respectively.</p>
+                whether they implement <span class="section__p_marked">applications</span> or <span class="section__p_marked">libraries</span>, respectively.</p>
             <p>As a small example, consider an assembly that contains the following code:</p>
-            <div class="code-block">
+            <div class="section__code-block">
                 <pre><code>
 using System;
 
@@ -248,7 +248,7 @@ namespace Acme.Collections
             </div>
             <p>The fully qualified name of this class is <code>Acme.Collections.Stack</code>. The class contains several members: a field named <code>top</code>, two methods named <code>Push</code> and <code>Pop</code>, and a nested class named <code>Entry</code>.
                 The <code>Entry</code> class further contains three members: a field named <code>next</code>, a field named <code>data</code>, and a constructor. The <code>Stack</code> is a <em>generic</em> class. It has one type parameter, <code>T</code>                that is replaced with a concrete type when it's used.</p>
-            <blockquote>
+            <blockquote class="section__quote">
                 <header>Note</header>
                 <p>A <em>stack</em> is a "first in - last out" (FILO) collection. New elements are added to the top of the stack. When an element is removed, it is removed from the top of the stack.</p>
             </blockquote>
@@ -256,7 +256,7 @@ namespace Acme.Collections
                 IL code in an assembly to processor-specific code.</p>
             <p>Because an assembly is a self-describing unit of functionality containing both code and metadata, there's no need for <code>include</code> directives and header files in C#. The public types and members contained in a particular assembly are
                 made available in a C# program simply by referencing that assembly when compiling the program. For example, this program uses the <code>Acme.Collections.Stack</code> class from the <code>acme.dll</code> assembly:</p>
-            <div class="code-block">
+            <div class="section__code-block">
                 <pre><code>
 using System;
 using Acme.Collections;
@@ -283,11 +283,11 @@ class Example
             <p>Further articles in this tour explain these organizational blocks.</p>
         </section>
     </main>
-    <footer class="footer-styling">
-        <header>Source</header>
+    <footer class="footer body__footer">
+        <header class="footer__header">Source</header>
         <p>All the data in this page taken from <a href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/">Microsoft web-site</a>.</p>
     </footer>
-    <a href="#navbar" class="button up-button">UP</a>
+    <a href="#navbar" class="button body__button_up body__button_visibility">UP</a>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 

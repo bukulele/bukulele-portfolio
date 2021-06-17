@@ -1,48 +1,55 @@
-.story {
-    display: flex;
-    align-items: center;
+.header {
+    text-align: center;
 }
 
-.story div {
-    width: 60%;
-    padding: 1rem;
-}
-
-.story p {
-    text-align: justify;
-    line-height: 180%;
-}
-
-.story figure {
-    width: 40%;
-    margin: 0px;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-}
-
-.background_style {
+.header_background {
     width: 80vw;
     background-color: hsl(55, 100%, 97%);
     margin: auto;
     padding: 1rem;
 }
 
-.title {
-    text-align: center;
+.main_background {
+    width: 80vw;
+    background-color: hsl(55, 100%, 97%);
+    margin: auto;
+    padding: 1rem;
 }
 
-figcaption {
+.section {
+    display: flex;
+    align-items: center;
+}
+
+.section__figure {
+    width: 40%;
+    margin: 0px;
+}
+
+.section__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.section__capture {
     font-style: italic;
     font-size: 0.9em;
     text-align: center;
 }
 
-.quotation {
+.section__div {
+    width: 60%;
+    padding: 1rem;
+}
+
+.section__div p {
+    text-align: justify;
+    line-height: 180%;
+}
+
+.section__quote {
     font-size: 1.1em;
     background-color: hsl(200, 100%, 90%);
     position: relative;
@@ -55,40 +62,40 @@ figcaption {
     box-shadow: 5px 5px 5px hsl(200, 50%, 50%)
 }
 
-.link_to_article {
+.main__link {
     text-align: center;
 }
 
 @media (max-width: 768px) {
-    html {
+    .html {
         font-size: 18px;
     }
-    .background_style {
-        width: 90vw;
-    }
-    body {
+    .body {
         margin: 0px;
     }
-    .story {
+    .header_background,
+    .main_background {
+        width: 90vw;
+    }
+    .section {
         display: flex;
         width: 100%;
         flex-direction: column;
         align-items: center;
         margin: auto;
     }
-    .story div {
+    .section__div {
         width: 100%;
         padding: 0px;
     }
-    .story p {
+    .section__div p {
         text-align: justify;
         line-height: 110%;
     }
-    .story figure {
+    .section__figure {
         width: 100%;
     }
-    #block2,
-    #block4 {
+    .section_column-reverse {
         flex-direction: column-reverse;
     }
 }
