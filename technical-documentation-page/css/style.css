@@ -1,212 +1,104 @@
-                                @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-                            * {
-                                padding: 0px;
-                                margin: 0px;
-                                box-sizing: border-box;
-                            }
-                            
-                            .html_font {
-                                font-family: 'Roboto', sans-serif;
-                                font-weight: 100;
-                            }
-                            
-                            .body {
-                                display: grid;
-                                grid-template-columns: minmax(max-content, max-content) auto;
-                                grid-template-rows: auto minmax(max-content, max-content);
-                                grid-template-areas: "nav main" "nav footer";
-                            }
-                            
-                            code {
-                                background-color: rgb(227, 227, 227);
-                                border-radius: 3px;
-                                padding: 1px;
-                            }
-                            
-                            .navbar {
-                                grid-area: nav;
-                                border-right: rgb(0, 0, 0);
-                                border-right-style: solid;
-                                border-right-width: 1px;
-                            }
-                            
-                            .body__navbar {
-                                width: auto;
-                            }
-                            
-                            .navbar__div {
-                                position: sticky;
-                                height: 100vh;
-                                top: 0px;
-                                overflow: auto;
-                                display: grid;
-                                grid-auto-rows: 3rem;
-                                scrollbar-width: thin;
-                            }
-                            
-                            .navbar__header {
-                                font-size: 1.3rem;
-                            }
-                            
-                            .navbar__link,
-                            .navbar__header {
-                                background-color: rgb(255, 255, 255);
-                                border-bottom: 1px solid rgb(0, 0, 0);
-                                padding: 1rem 2rem;
-                                font-weight: bold;
-                                margin: 0px;
-                                white-space: nowrap;
-                            }
-                            
-                            .navbar__link:hover {
-                                background-color: rgb(227, 227, 227);
-                            }
-                            
-                            .navbar__link {
-                                text-decoration: none;
-                                color: rgb(64, 64, 64);
-                            }
-                            
-                            .main {
-                                grid-area: main;
-                            }
-                            
-                            .section__header,
-                            .footer__header,
-                            .section__quote header {
-                                font-size: 1.3rem;
-                                font-weight: bold;
-                                margin: 2rem 1rem;
-                            }
-                            
-                            .body__main,
-                            .body__footer {
-                                display: block;
-                                width: 90%;
-                                margin: auto;
-                                text-align: justify;
-                                padding: 1px;
-                            }
-                            
-                            .section__p_marked {
-                                font-style: italic;
-                                font-weight: bold;
-                            }
-                            
-                            .section>p,
-                            .footer>p {
-                                margin: 1rem;
-                            }
-                            
-                            .section__quote {
-                                width: 70%;
-                                background-color: rgb(204, 238, 255);
-                                margin: auto;
-                                padding: 1rem;
-                                font-style: italic;
-                                line-height: 120%;
-                                text-align: justify;
-                                border-radius: 10px;
-                                box-shadow: 5px 5px 5px rgb(64, 149, 191);
-                            }
-                            
-                            .section__quote header {
-                                margin: 0 0 1rem 0;
-                            }
-                            
-                            .section ul,
-                            .section li {
-                                margin: 0.5rem 0rem 0.5rem 3rem;
-                            }
-                            
-                            .section a,
-                            .footer a {
-                                color: rgb(0, 141, 242);
-                                text-decoration: none;
-                            }
-                            
-                            .section a:hover,
-                            .footer a:hover {
-                                text-decoration: underline;
-                            }
-                            
-                            .footer {
-                                grid-area: footer;
-                            }
-                            
-                            .section__code-block {
-                                width: 90%;
-                                background-color: rgb(227, 227, 227);
-                                border-left: 5px solid rgb(255, 248, 36);
-                                padding: 1rem;
-                                margin: auto;
-                                overflow-x: auto;
-                            }
-                            
-                            .button {
-                                text-decoration: none;
-                                background-color: rgb(0, 153, 229);
-                                padding: 0.1rem 0.5rem;
-                                border: 2px solid rgb(0, 95, 143);
-                                border-radius: 3px;
-                                text-align: center;
-                                font-weight: bold;
-                                color: rgb(255, 255, 255);
-                            }
-                            
-                            .body__button_up {
-                                display: block;
-                                position: fixed;
-                                bottom: 1rem;
-                                right: 1rem;
-                            }
-                            
-                            .body__button_visibility {
-                                display: none;
-                            }
-                            
-                            @media only screen and (max-width: 768px) {
+                                    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+                                * {
+                                    padding: 0px;
+                                    margin: 0px;
+                                    box-sizing: border-box;
+                                }
+                                
+                                .html_font {
+                                    font-family: 'Roboto', sans-serif;
+                                    font-weight: 100;
+                                }
+                                
                                 .body {
-                                    grid-template-columns: 100%;
-                                    grid-template-rows: 2rem auto auto;
-                                    grid-template-areas: "nav" "main" "footer";
-                                }
-                                .section__quote {
-                                    width: 95%;
-                                }
-                                .navbar__div {
-                                    position: relative;
-                                    width: 100%;
-                                    height: 30vh;
-                                }
-                                .main {
-                                    margin-top: 30vh;
-                                }
-                                .section ul,
-                                .section li {
-                                    margin: 0.5rem 0rem 0.5rem 1rem;
-                                }
-                                /*OLD CSS*/
-                                header {
-                                    font-size: 1.3rem;
-                                    font-weight: bold;
-                                    margin: 2rem 1rem;
-                                }
-                                code {
-                                    background-color: rgba(227, 227, 227, 1);
-                                    border-radius: 3px;
-                                    padding: 1px;
-                                }
-                                body {
                                     display: grid;
                                     grid-template-columns: minmax(max-content, max-content) auto;
                                     grid-template-rows: auto minmax(max-content, max-content);
                                     grid-template-areas: "nav main" "nav footer";
                                 }
-                                main {
+                                
+                                code {
+                                    background-color: rgb(227, 227, 227);
+                                    border-radius: 3px;
+                                    padding: 1px;
+                                }
+                                
+                                .navbar {
+                                    grid-area: nav;
+                                    border-right: rgb(0, 0, 0);
+                                    border-right-style: solid;
+                                    border-right-width: 1px;
+                                }
+                                
+                                .body__navbar {
+                                    width: auto;
+                                }
+                                
+                                .navbar__div {
+                                    position: sticky;
+                                    height: 100vh;
+                                    top: 0px;
+                                    overflow: auto;
+                                    display: grid;
+                                    grid-auto-rows: 3rem;
+                                    scrollbar-width: thin;
+                                }
+                                
+                                .navbar__header {
+                                    font-size: 1.3rem;
+                                }
+                                
+                                .navbar__link,
+                                .navbar__header {
+                                    background-color: rgb(255, 255, 255);
+                                    border-bottom: 1px solid rgb(0, 0, 0);
+                                    padding: 1rem 2rem;
+                                    font-weight: bold;
+                                    margin: 0px;
+                                    white-space: nowrap;
+                                }
+                                
+                                .navbar__link:hover {
+                                    background-color: rgb(227, 227, 227);
+                                }
+                                
+                                .navbar__link {
+                                    text-decoration: none;
+                                    color: rgb(64, 64, 64);
+                                }
+                                
+                                .main {
                                     grid-area: main;
                                 }
-                                blockquote {
+                                
+                                .section__header,
+                                .footer__header,
+                                .section__quote header {
+                                    font-size: 1.3rem;
+                                    font-weight: bold;
+                                    margin: 2rem 1rem;
+                                }
+                                
+                                .body__main,
+                                .body__footer {
+                                    display: block;
+                                    width: 90%;
+                                    margin: auto;
+                                    text-align: justify;
+                                    padding: 1px;
+                                }
+                                
+                                .section__p_marked {
+                                    font-style: italic;
+                                    font-weight: bold;
+                                }
+                                
+                                .section>p,
+                                .footer>p {
+                                    margin: 1rem;
+                                }
+                                
+                                .section__quote {
                                     width: 70%;
                                     background-color: rgb(204, 238, 255);
                                     margin: auto;
@@ -217,118 +109,80 @@
                                     border-radius: 10px;
                                     box-shadow: 5px 5px 5px rgb(64, 149, 191);
                                 }
-                                blockquote header {
+                                
+                                .section__quote header {
                                     margin: 0 0 1rem 0;
                                 }
-                                footer {
-                                    grid-area: footer;
-                                }
-                                .main-styling ul,
-                                .main-styling li {
+                                
+                                .section ul,
+                                .section li {
                                     margin: 0.5rem 0rem 0.5rem 3rem;
                                 }
-                                .main-styling a,
-                                .footer-styling a {
-                                    color: rgba(0, 141, 242, 1);
+                                
+                                .section a,
+                                .footer a {
+                                    color: rgb(0, 141, 242);
                                     text-decoration: none;
                                 }
-                                .main-styling a:hover,
-                                .footer-styling a:hover {
+                                
+                                .section a:hover,
+                                .footer a:hover {
                                     text-decoration: underline;
                                 }
-                                .navbar-styling {
-                                    grid-area: nav;
-                                    border-right: rgba(0, 0, 0, 1);
-                                    border-right-style: solid;
-                                    border-right-width: 1px;
-                                    width: auto;
+                                
+                                .footer {
+                                    grid-area: footer;
                                 }
-                                .navbar-sticky {
-                                    position: sticky;
-                                    height: 100vh;
-                                    top: 0px;
-                                    overflow: auto;
-                                    display: grid;
-                                    grid-auto-rows: 3rem;
-                                    scrollbar-width: thin;
-                                }
-                                .navbar-styling a,
-                                .navbar-styling header {
-                                    background-color: rgba(255, 255, 255, 1);
-                                    border-bottom: 1px solid black;
-                                    padding: 1rem 2rem;
-                                    font-weight: bold;
-                                    margin: 0px;
-                                    white-space: nowrap;
-                                }
-                                .navbar-styling a:hover {
-                                    background-color: rgba(227, 227, 227, 1);
-                                }
-                                .nav-link {
-                                    text-decoration: none;
-                                    color: rgba(64, 64, 64, 1);
-                                }
-                                .main-styling,
-                                .footer-styling {
-                                    display: block;
+                                
+                                .section__code-block {
                                     width: 90%;
-                                    margin: auto;
-                                    text-align: justify;
-                                    padding: 1px;
-                                }
-                                .text-marked {
-                                    font-style: italic;
-                                    font-weight: bold;
-                                }
-                                .main-section>p,
-                                .footer-styling>p {
-                                    margin: 1rem;
-                                }
-                                .code-block {
-                                    width: 90%;
-                                    background-color: rgba(227, 227, 227, 1);
-                                    border-left: 5px solid rgba(255, 248, 36, 1);
+                                    background-color: rgb(227, 227, 227);
+                                    border-left: 5px solid rgb(255, 248, 36);
                                     padding: 1rem;
                                     margin: auto;
                                     overflow-x: auto;
                                 }
-                                .up-button {
+                                
+                                .button {
+                                    text-decoration: none;
+                                    background-color: rgb(0, 153, 229);
+                                    padding: 0.1rem 0.5rem;
+                                    border: 2px solid rgb(0, 95, 143);
+                                    border-radius: 3px;
+                                    text-align: center;
+                                    font-weight: bold;
+                                    color: rgb(255, 255, 255);
+                                }
+                                
+                                .body__button_up {
+                                    display: block;
+                                    position: fixed;
+                                    bottom: 1rem;
+                                    right: 1rem;
+                                }
+                                
+                                .body__button_visibility {
                                     display: none;
                                 }
+                                
                                 @media only screen and (max-width: 768px) {
-                                    body {
+                                    .body {
                                         grid-template-columns: 100%;
                                         grid-template-rows: 2rem auto auto;
                                         grid-template-areas: "nav" "main" "footer";
                                     }
-                                    blockquote {
+                                    .section__quote {
                                         width: 95%;
                                     }
-                                    .navbar-sticky {
+                                    .navbar__div {
                                         position: relative;
                                         width: 100%;
                                         height: 30vh;
                                     }
-                                    .main-styling {
+                                    .main {
                                         margin-top: 30vh;
                                     }
-                                    .main-styling ul,
-                                    .main-styling li {
+                                    .section ul,
+                                    .section li {
                                         margin: 0.5rem 0rem 0.5rem 1rem;
                                     }
-                                    .up-button {
-                                        display: block;
-                                        text-decoration: none;
-                                        background-color: rgba(0, 153, 229, 1);
-                                        padding: 0.1rem 0.5rem;
-                                        border: 2px solid rgb(0, 95, 143);
-                                        border-radius: 3px;
-                                        text-align: center;
-                                        font-weight: bold;
-                                        color: rgba(255, 255, 255, 1);
-                                        position: fixed;
-                                        bottom: 1rem;
-                                        right: 1rem;
-                                    }
-                                }
-                                */
